@@ -988,6 +988,92 @@ app.post("/api/v1/backoffice/cambio-estado/local", (req, res) => {
   res.status(200).json(response);
 });
 
+app.post("/api/v1/backoffice/listar/local", (req, res) => {
+  const response = {
+    respuestaGeneral: {
+      codigoTrxInterno: "111876",
+      codigoPeticionUnica: "3f229a72-1c88-4445-8b16-e0ae85354fcd",
+      codigoMensajeRespuesta: "00",
+      descripcionMensajeRespuesta: "PROCESO EXITOSO",
+      tipoMensajeRespuesta: "1",
+      tipoSeveridad: "3",
+      detalleTecnicoRespuesta: "Proceso Exitoso",
+      accion: "PET",
+      tiempoProcesamiento: "0.0026623",
+      fechaRespuesta: "20241118",
+      horaRespuesta: "14:24:42",
+      campoAdicionalColeccion: [
+        {
+          numeroLinea: 1,
+          descripcionValor: "",
+          valor: "",
+        },
+      ],
+    },
+    respuestaListarLocalPaginadoColeccion: [
+      {
+        numeroItem: 1,
+        localColeccion: {
+          totalElements: 4,
+          totalPages: 1,
+          content: [
+            {
+              nombreLocal: "Puma Santa Lucia",
+              Municipio: "Santa Lucia",
+              nombre: "Puma Santa Lucia",
+              ubicacion: "Colonia El Chimbo",
+              descripcion: "Gasolinera",
+              observacion: "Gasolinera",
+              estado: 1,
+            },
+          ],
+          empty: false,
+          first: true,
+          last: true,
+          number: 0,
+          numberOfElements: 4,
+          pageable: {
+            pageNumber: 0,
+            pageSize: 5,
+            sort: {
+              empty: false,
+              sorted: true,
+              unsorted: false,
+            },
+            offset: 0,
+            unpaged: false,
+            paged: true,
+          },
+          sort: {
+            empty: false,
+            sorted: true,
+            unsorted: false,
+          },
+          size: 5,
+        },
+        mensajeRespuestaColeccion: [
+          {
+            numeroLinea: 1,
+            codigoMensajeRespuesta: "00",
+            descripcionMensajeRespuesta: "PROCESO EXITOSO",
+            tipoMensajeRespuesta: "1",
+            tipoSeveridad: "3",
+            detalleTecnicoRespuesta: "Consulta Exitosa",
+          },
+        ],
+        campoAdicionalColeccion: [
+          {
+            numeroLinea: 1,
+            descripcionValor: "",
+            valor: "",
+          },
+        ],
+      },
+    ],
+  };
+  res.status(200).json(response);
+});
+
 app.post("/api/v1/backoffice/listar/local/detalle", (req, res) => {
   const response = {
     respuestaGeneral: {
