@@ -1018,6 +1018,7 @@ app.post("/api/v1/backoffice/listar/local", (req, res) => {
           totalPages: 1,
           content: [
             {
+              codigoLocal: "01",
               nombreLocal: "Puma Santa Lucia",
               Municipio: "Santa Lucia",
               nombre: "Puma Santa Lucia",
