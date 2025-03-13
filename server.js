@@ -1102,7 +1102,7 @@ app.post("/api/v1/backoffice/listar/local/detalle", (req, res) => {
         numeroItem: 1,
         codigoLocal: "01",
         nombreLocal: "Puma Santa Lucia",
-        codigodepartamento: "08",
+        codigoDepartamento: "08",
         codigoMunicipio: "01",
         nombre: "Puma Santa Lucia",
         ubicacion: "Colonia El Chimbo",
