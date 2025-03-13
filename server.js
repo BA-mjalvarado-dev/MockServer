@@ -1097,7 +1097,7 @@ app.post("/api/v1/backoffice/listar/local/detalle", (req, res) => {
         },
       ],
     },
-    respuestaListarLocalPaginadoColeccion: [
+    respuestaListarLocalDetalleColeccion: [
       {
         numeroItem: 1,
         codigoLocal: "01",
